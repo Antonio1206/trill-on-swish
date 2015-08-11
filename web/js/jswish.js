@@ -54,9 +54,12 @@ preferences.setDefault("semantic-highlighting", false);
 	  $(".prolog-editor").xmlEditor('print');
 	}
       },
-      "Edit":
+     "Edit":
       { "Clear messages": function() {
 	  menuBroadcast("clearMessages");
+	},
+        "Edit with webProtegè": function() {           //funzione aggiunta
+	  window.open("http://127.0.0.1:8080/webprotege/");
 	},
 	"Options": "--",
 	"Semantic highlighting": {

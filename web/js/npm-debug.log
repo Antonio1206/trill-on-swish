@@ -1,0 +1,158 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'jsdoc' ]
+2 info using npm@2.13.4
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /usr/lib/package.json
+6 verbose readDependencies loading dependencies from /usr/lib/package.json
+7 silly cache add args [ 'jsdoc', null ]
+8 verbose cache add spec jsdoc
+9 silly cache add parsed spec { raw: 'jsdoc',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'jsdoc',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed jsdoc@*
+11 verbose addNamed "*" is a valid semver range for jsdoc
+12 silly addNameRange { name: 'jsdoc', range: '*', hasData: false }
+13 silly mapToRegistry name jsdoc
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/jsdoc
+17 verbose addNameRange registry:https://registry.npmjs.org/jsdoc not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/jsdoc
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 22:17:22
+21 verbose request id 13bc0f0b67e45919
+22 verbose etag "8U3XLYRSZG02JPMADWU8TLGGQ"
+23 http request GET https://registry.npmjs.org/jsdoc
+24 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+25 info attempt registry request try #2 at 22:17:32
+26 verbose etag "8U3XLYRSZG02JPMADWU8TLGGQ"
+27 http request GET https://registry.npmjs.org/jsdoc
+28 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+29 info attempt registry request try #3 at 22:18:32
+30 verbose etag "8U3XLYRSZG02JPMADWU8TLGGQ"
+31 http request GET https://registry.npmjs.org/jsdoc
+32 silly get cb [ 304, undefined ]
+33 verbose etag https://registry.npmjs.org/jsdoc from cache
+34 verbose get saving jsdoc to /home/antonio/.npm/registry.npmjs.org/jsdoc/.cache.json
+35 silly addNameRange number 2 { name: 'jsdoc', range: '*', hasData: true }
+36 silly addNameRange versions [ 'jsdoc',
+36 silly addNameRange   [ '0.0.0',
+36 silly addNameRange     '3.2.0-dev',
+36 silly addNameRange     '3.2.0',
+36 silly addNameRange     '3.2.1',
+36 silly addNameRange     '3.2.2',
+36 silly addNameRange     '3.3.0-alpha1',
+36 silly addNameRange     '3.3.0-alpha2',
+36 silly addNameRange     '3.3.0-alpha3',
+36 silly addNameRange     '3.3.0-alpha4',
+36 silly addNameRange     '3.3.0-alpha5',
+36 silly addNameRange     '3.3.0-alpha7',
+36 silly addNameRange     '3.3.0-alpha8',
+36 silly addNameRange     '3.3.0-alpha9',
+36 silly addNameRange     '3.3.0-alpha10',
+36 silly addNameRange     '3.3.0-alpha11',
+36 silly addNameRange     '3.3.0-alpha12',
+36 silly addNameRange     '3.3.0-alpha13',
+36 silly addNameRange     '3.3.0-beta1',
+36 silly addNameRange     '3.3.0-beta2',
+36 silly addNameRange     '3.3.0-beta3',
+36 silly addNameRange     '3.3.0',
+36 silly addNameRange     '3.3.1',
+36 silly addNameRange     '3.3.2' ] ]
+37 silly addNamed jsdoc@3.3.2
+38 verbose addNamed "3.3.2" is a plain semver version for jsdoc
+39 silly cache afterAdd jsdoc@3.3.2
+40 verbose afterAdd /home/antonio/.npm/jsdoc/3.3.2/package/package.json not in flight; writing
+41 verbose afterAdd /home/antonio/.npm/jsdoc/3.3.2/package/package.json written
+42 silly install resolved [ { name: 'jsdoc',
+42 silly install resolved     version: '3.3.2',
+42 silly install resolved     revision: '1434234028109',
+42 silly install resolved     description: 'An API documentation generator for JavaScript.',
+42 silly install resolved     keywords: [ 'documentation', 'javascript' ],
+42 silly install resolved     license: 'Apache-2.0',
+42 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/jsdoc3/jsdoc.git' },
+42 silly install resolved     dependencies:
+42 silly install resolved      { async: '~0.9.0',
+42 silly install resolved        catharsis: '~0.8.7',
+42 silly install resolved        'escape-string-regexp': '~1.0.2',
+42 silly install resolved        esprima: 'https://github.com/ariya/esprima/tarball/49a2eccb243f29bd653b11e9419241a9d726af7c',
+42 silly install resolved        js2xmlparser: '~0.1.7',
+42 silly install resolved        marked: '~0.3.2',
+42 silly install resolved        requizzle: '~0.2.0',
+42 silly install resolved        'strip-json-comments': '~1.0.2',
+42 silly install resolved        taffydb: 'https://github.com/hegemonic/taffydb/tarball/7d100bcee0e997ee4977e273cdce60bd8933050e',
+42 silly install resolved        underscore: '~1.7.0',
+42 silly install resolved        wrench: '~1.5.8' },
+42 silly install resolved     devDependencies:
+42 silly install resolved      { eslint: '~0.11.0',
+42 silly install resolved        gulp: '~3.8.5',
+42 silly install resolved        'gulp-eslint': '~0.1.7',
+42 silly install resolved        'gulp-json-editor': '~2.0.2',
+42 silly install resolved        istanbul: '~0.2.1',
+42 silly install resolved        tv4: 'https://github.com/hegemonic/tv4/tarball/own-properties' },
+42 silly install resolved     engines: { node: '>=0.10' },
+42 silly install resolved     scripts: { test: 'gulp test' },
+42 silly install resolved     bin: { jsdoc: './jsdoc.js' },
+42 silly install resolved     bugs: { url: 'https://github.com/jsdoc3/jsdoc/issues' },
+42 silly install resolved     author: { name: 'Michael Mathews', email: 'micmath@gmail.com' },
+42 silly install resolved     contributors: [ [Object] ],
+42 silly install resolved     maintainers: [ [Object], [Object] ],
+42 silly install resolved     gitHead: 'ebe8a966c4f2b63ca202d6e5fd0f2c0e49c7700f',
+42 silly install resolved     homepage: 'https://github.com/jsdoc3/jsdoc#readme',
+42 silly install resolved     _id: 'jsdoc@3.3.2',
+42 silly install resolved     _shasum: '689e2507494ead440a1369dadf92fc44edd02836',
+42 silly install resolved     _from: 'jsdoc@*',
+42 silly install resolved     _npmVersion: '2.10.1',
+42 silly install resolved     _nodeVersion: '0.12.4',
+42 silly install resolved     _npmUser: { name: 'hegemonic', email: 'jeffrey.l.williams@gmail.com' },
+42 silly install resolved     dist:
+42 silly install resolved      { shasum: '689e2507494ead440a1369dadf92fc44edd02836',
+42 silly install resolved        tarball: 'http://registry.npmjs.org/jsdoc/-/jsdoc-3.3.2.tgz' },
+42 silly install resolved     directories: {},
+42 silly install resolved     _resolved: 'https://registry.npmjs.org/jsdoc/-/jsdoc-3.3.2.tgz',
+42 silly install resolved     readme: 'ERROR: No README data found!' } ]
+43 info install jsdoc@3.3.2 into /usr/lib
+44 info installOne jsdoc@3.3.2
+45 verbose installOne of jsdoc to /usr/lib not in flight; installing
+46 verbose lock using /home/antonio/.npm/_locks/jsdoc-9d9017dbcef291fa.lock for /usr/lib/node_modules/jsdoc
+47 silly install write writing jsdoc 3.3.2 to /usr/lib/node_modules/jsdoc
+48 verbose unbuild lib/node_modules/jsdoc
+49 info preuninstall jsdoc@3.3.2
+50 info uninstall jsdoc@3.3.2
+51 verbose unbuild rmStuff jsdoc@3.3.2 from /usr/lib/node_modules
+52 silly gentlyRm /usr/bin/jsdoc is being gently removed
+53 silly gentlyRm verifying /usr is an npm working directory
+54 silly gentlyRm containing path /usr is under npm's control, in /usr
+55 silly gentlyRm deletion target /usr/bin/jsdoc is under /usr
+56 verbose gentlyRm vacuuming from /usr/bin/jsdoc up to /usr
+57 silly vacuum-fs removing /usr/bin/jsdoc
+58 verbose unlock done using /home/antonio/.npm/_locks/jsdoc-9d9017dbcef291fa.lock for /usr/lib/node_modules/jsdoc
+59 verbose stack Error: EACCES, unlink '/usr/bin/jsdoc'
+60 verbose cwd /home/antonio/ClioPatria/cpack/trill_on_swish/src/web/js
+61 error Linux 3.13.0-53-generic
+62 error argv "node" "/usr/local/bin/npm" "install" "-g" "jsdoc"
+63 error node v0.10.25
+64 error npm  v2.13.4
+65 error path /usr/bin/jsdoc
+66 error code EACCES
+67 error errno 3
+68 error Error: EACCES, unlink '/usr/bin/jsdoc'
+68 error  { [Error: EACCES, unlink '/usr/bin/jsdoc'] errno: 3, code: 'EACCES', path: '/usr/bin/jsdoc' }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ 3, true ]
+71 verbose unbuild lib/node_modules/jsdoc
+72 info preuninstall jsdoc@3.3.2
+73 info uninstall jsdoc@3.3.2
+74 verbose unbuild rmStuff jsdoc@3.3.2 from /usr/lib/node_modules
+75 silly gentlyRm /usr/bin/jsdoc is being gently removed
+76 silly gentlyRm verifying /usr is an npm working directory
+77 silly gentlyRm containing path /usr is under npm's control, in /usr
+78 silly gentlyRm deletion target /usr/bin/jsdoc is under /usr
+79 verbose gentlyRm vacuuming from /usr/bin/jsdoc up to /usr
+80 silly vacuum-fs removing /usr/bin/jsdoc
+81 error error rolling back Error: EACCES, unlink '/usr/bin/jsdoc'
+81 error error rolling back  { [Error: EACCES, unlink '/usr/bin/jsdoc'] errno: 3, code: 'EACCES', path: '/usr/bin/jsdoc' }
