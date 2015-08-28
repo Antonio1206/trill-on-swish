@@ -59,7 +59,7 @@ preferences.setDefault("semantic-highlighting", false);
 	  menuBroadcast("clearMessages");
 	},
         "Edit with webProtegè": function() {           //funzione aggiunta
-	  window.open("http://127.0.0.1:8080/webprotege/");
+	  document.location.href="http://127.0.0.1:8084/webprotege/"
 	},
 	"Options": "--",
 	"Semantic highlighting": {
