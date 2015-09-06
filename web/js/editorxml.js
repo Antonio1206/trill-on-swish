@@ -73,9 +73,15 @@ define([ "tos_cm/lib/codemirror",
          "jquery", "laconic",*/
        ],
        function(CodeMirror, config, preferences, form, /*templateHint,*/ trill_on_swish_gitty) {
+	 
+	 function receiveMessage(event)                              //funzione per gestire
+	 {
+	   alert('messaggio ricevuto' + event.data);
+	 }
 
 (function($) {
   var pluginName = 'xmlEditor';
+  
 
   /** @lends $.fn.xmlEditor */
   var methods = {
@@ -102,7 +108,9 @@ define([ "tos_cm/lib/codemirror",
      *
      */
     _init: function(options) {
-
+      
+      window.addEventListener("message",receiveMessage,false);      //aggiungo listener alla pagina per i messaggi ricevuti
+      
       return this.each(function() {
 	var elem = $(this);
 	var data = {};
@@ -125,17 +133,21 @@ define([ "tos_cm/lib/codemirror",
 
 	if ( (ta=elem.children("textarea")[0]) ) {
 	  var file = $(ta).attr("data-file");
-
 	  if ( file )
 	    data.file = file;
 	  if ( window.trill_on_swish && window.trill_on_swish.meta_data )
 	    data.meta = window.trill_on_swish.meta_data;
 	} else {
 	  ta = $.el.textarea({placeholder:options.placeholder},
-			     elem.text());
+			     elem.text());  
+	  $(ta).attr("id","OntologyTextArea");       //aggiunto id alla textarea
 	  elem.append(ta);
 	}
+
+	
+	         
   //      CodeMirror.defaults.mode="javascript";
+	
 	data.tos_cm              = CodeMirror.fromTextArea(ta, options);
 	console.log(CodeMirror.defaults);
 	console.log(data.tos_cm.getMode());
@@ -668,6 +680,7 @@ define([ "tos_cm/lib/codemirror",
   };
 }(jQuery));
 
+
 		 /*******************************
 		 *	STYLE CONFIGURATION	*
 		 *******************************/
@@ -688,3 +701,6 @@ define([ "tos_cm/lib/codemirror",
 
 
 }); // define
+
+
+	

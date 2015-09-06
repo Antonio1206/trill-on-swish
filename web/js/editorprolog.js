@@ -90,7 +90,6 @@ define([ "tos_cm/lib/codemirror",
 
 	if ( (ta=elem.children("textarea")[0]) ) {
 	  var file = $(ta).attr("data-file");
-
 	  if ( file )
 	    data.file = file;
 	  if ( window.trill_on_swish && window.trill_on_swish.meta_data )
