@@ -112,7 +112,7 @@ define([ "tos_cm/lib/codemirror",
 	var data = {};
 	var ta;					/* textarea */
 
-	window.addEventListener("message",function (event) {
+	window.addEventListener("message",function (event) {       //aggiunto listener che prende il messaggio e lo setta nell'area di testo
 	      elem.xmlEditor('setSource',event.data);
 	},false);
 	options = $.extend({
