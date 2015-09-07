@@ -74,10 +74,7 @@ define([ "tos_cm/lib/codemirror",
        ],
        function(CodeMirror, config, preferences, form, /*templateHint,*/ trill_on_swish_gitty) {
 	 
-/*	 function receiveMessage(event)                              //funzione per gestire
-	 {
-	   alert('messaggio ricevuto' + event.data);
-	 } */
+
 
 (function($) {
   var pluginName = 'xmlEditor';
@@ -109,16 +106,13 @@ define([ "tos_cm/lib/codemirror",
      */
     _init: function(options) {
       
-     // window.addEventListener("message",receiveMessage,false);      //aggiungo listener alla pagina per i messaggi ricevuti
       
       return this.each(function() {
 	var elem = $(this);
 	var data = {};
 	var ta;					/* textarea */
 
-	//window.addEventListener("message",receiveMessage,false);      //aggiungo listener alla pagina per i messaggi ricevuti
 	window.addEventListener("message",function (event) {
-	      alert("messaggio ricevuto:" + event.data);
 	      elem.xmlEditor('setSource',event.data);
 	},false);
 	options = $.extend({

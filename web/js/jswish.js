@@ -58,7 +58,7 @@ preferences.setDefault("semantic-highlighting", false);
       { "Clear messages": function() {
 	  menuBroadcast("clearMessages");
 	},
-        "Edit with webProtegè": function() {           //funzione aggiunta
+        "Edit with webProtègè": function() {           //funzione aggiunta
 	  window.open("http://127.0.0.1:8080/webprotege-2.5.0/");
 	},
 	"Options": "--",
